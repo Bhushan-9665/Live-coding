@@ -1,0 +1,200 @@
+/* Bhushan Sonawane */
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.bg{
+    background-color: rgb(44, 41, 41);
+}
+.grid{
+    display: grid;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    grid-template-columns: repeat(5, 300px);
+    grid-template-rows: repeat(2, 300px);
+    gap: 20px;
+    position: relative;
+    top: 300px;
+    
+    
+}
+
+.Box{
+    background-color: yellowgreen;
+    border: 3px solid black;
+    text-align: center;
+    padding-top: 130px;
+    font-size: xx-large;
+    color: aliceblue;
+}
+
+.item-1:hover{
+    background-color: rgb(201, 12, 12);
+    animation: Move-right 0.5s forwards;
+    
+}
+
+@keyframes Move-right {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(10px);
+    }
+}
+
+.item-2:hover{
+    background-color: rgb(201, 12, 12);
+    animation: Move-left 0.5s forwards;
+    
+}
+
+@keyframes Move-left {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-10px);
+    }
+}
+
+.item-3:hover{
+    background-color: rgb(201, 12, 12);
+    animation: Move-up 0.5s forwards;
+    
+}
+
+@keyframes Move-up {
+    0%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+.item-4:hover{
+    background-color: rgb(201, 12, 12);
+    animation: Move-down 0.5s forwards;
+    
+}
+
+@keyframes Move-down {
+    0%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+.item-5:hover{
+    background-color: rgb(201, 12, 12);
+    animation: zoom-in 0.5s forwards;
+    
+}
+
+@keyframes zoom-in {
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.5);
+    }
+}
+
+.item-6:hover{
+    background-color: rgb(201, 12, 12);
+    animation: zoom-out 0.5s forwards;
+    
+}
+
+@keyframes zoom-out {
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(0.5);
+    }
+}
+
+.item-7:hover{
+    background-color: rgb(201, 12, 12);
+    animation: Change-Oval 0.5s forwards;
+    
+}
+
+@keyframes Change-Oval {
+    0%{
+        border-radius: 0%;
+    }
+
+    100%{
+        border-radius: 50%;
+    }
+}
+
+.item-8:hover{
+    background-color: rgb(201, 12, 12);
+    animation: Left-right 0.5s forwards;
+    
+}
+
+@keyframes Left-right {
+    0%{
+        transform: scaleX(1);
+    }
+
+    100%{
+        transform: scaleX(1.5);
+    }
+}
+
+.item-9:hover{
+    background-color: rgb(201, 12, 12);
+    animation: up-down 0.5s forwards;
+    
+}
+
+@keyframes up-down {
+    0%{
+        transform: scaleY(1);
+    }
+
+    100%{
+        transform: scaleY(1.5);
+    }
+}
+
+.item-10:hover{
+    background-color: rgb(201, 12, 12);
+    animation: Rotate-Clockwise 0.5s forwards;
+    
+}
+
+@keyframes Rotate-Clockwise {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(45deg);
+    }
+}
+
+@media screen and (max-width: 900px) { 
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
